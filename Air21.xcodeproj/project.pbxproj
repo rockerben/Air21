@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5951A7914844AA000DC1312 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951A7814844AA000DC1312 /* UIKit.framework */; };
+		B5951A7B14844AA000DC1312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951A7A14844AA000DC1312 /* Foundation.framework */; };
+		B5951A7D14844AA000DC1312 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951A7C14844AA000DC1312 /* CoreGraphics.framework */; };
+		B5951A8314844AA000DC1312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5951A8114844AA000DC1312 /* InfoPlist.strings */; };
+		B5951A8514844AA000DC1312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A8414844AA000DC1312 /* main.m */; };
+		B5951A8914844AA000DC1312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A8814844AA000DC1312 /* AppDelegate.m */; };
+		B5951A8C14844AA000DC1312 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A8B14844AA000DC1312 /* FirstViewController.m */; };
+		B5951A8E14844AA000DC1312 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = B5951A8D14844AA000DC1312 /* first.png */; };
+		B5951A9014844AA000DC1312 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5951A8F14844AA000DC1312 /* first@2x.png */; };
+		B5951A9314844AA000DC1312 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A9214844AA000DC1312 /* SecondViewController.m */; };
+		B5951A9514844AA000DC1312 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = B5951A9414844AA000DC1312 /* second.png */; };
+		B5951A9714844AA000DC1312 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5951A9614844AA000DC1312 /* second@2x.png */; };
+		B5951A9A14844AA000DC1312 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5951A9814844AA000DC1312 /* FirstViewController.xib */; };
+		B5951A9D14844AA000DC1312 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5951A9B14844AA000DC1312 /* SecondViewController.xib */; };
+		B5951AA514844AA000DC1312 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951AA414844AA000DC1312 /* SenTestingKit.framework */; };
+		B5951AA614844AA000DC1312 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951A7814844AA000DC1312 /* UIKit.framework */; };
+		B5951AA714844AA000DC1312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951A7A14844AA000DC1312 /* Foundation.framework */; };
+		B5951AAF14844AA000DC1312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5951AAD14844AA000DC1312 /* InfoPlist.strings */; };
+		B5951AB214844AA100DC1312 /* Air21Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951AB114844AA100DC1312 /* Air21Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5951AA814844AA000DC1312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5951A6B14844AA000DC1312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5951A7314844AA000DC1312;
+			remoteInfo = Air21;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5951A7414844AA000DC1312 /* Air21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Air21.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5951A7814844AA000DC1312 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5951A7A14844AA000DC1312 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5951A7C14844AA000DC1312 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5951A8014844AA000DC1312 /* Air21-Info.plist */ = {isa = PBXFileReference; path = "Air21-Info.plist"; sourceTree = "<group>"; };
+		B5951A8214844AA000DC1312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5951A8414844AA000DC1312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5951A8614844AA000DC1312 /* Air21-Prefix.pch */ = {isa = PBXFileReference; path = "Air21-Prefix.pch"; sourceTree = "<group>"; };
+		B5951A8714844AA000DC1312 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B5951A8814844AA000DC1312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B5951A8A14844AA000DC1312 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		B5951A8B14844AA000DC1312 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B5951A8D14844AA000DC1312 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		B5951A8F14844AA000DC1312 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		B5951A9114844AA000DC1312 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		B5951A9214844AA000DC1312 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B5951A9414844AA000DC1312 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		B5951A9614844AA000DC1312 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		B5951A9914844AA000DC1312 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		B5951A9C14844AA000DC1312 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		B5951AA314844AA000DC1312 /* Air21Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Air21Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5951AA414844AA000DC1312 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B5951AAC14844AA000DC1312 /* Air21Tests-Info.plist */ = {isa = PBXFileReference; path = "Air21Tests-Info.plist"; sourceTree = "<group>"; };
+		B5951AAE14844AA000DC1312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5951AB014844AA100DC1312 /* Air21Tests.h */ = {isa = PBXFileReference; path = Air21Tests.h; sourceTree = "<group>"; };
+		B5951AB114844AA100DC1312 /* Air21Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Air21Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5951A7114844AA000DC1312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5951A7914844AA000DC1312 /* UIKit.framework in Frameworks */,
+				B5951A7B14844AA000DC1312 /* Foundation.framework in Frameworks */,
+				B5951A7D14844AA000DC1312 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5951A9F14844AA000DC1312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5951AA514844AA000DC1312 /* SenTestingKit.framework in Frameworks */,
+				B5951AA614844AA000DC1312 /* UIKit.framework in Frameworks */,
+				B5951AA714844AA000DC1312 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5951A6914844AA000DC1312 = {
+			isa = PBXGroup;
+			children = (
+				B5951A7E14844AA000DC1312 /* Air21 */,
+				B5951AAA14844AA000DC1312 /* Air21Tests */,
+				B5951A7714844AA000DC1312 /* Frameworks */,
+				B5951A7514844AA000DC1312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5951A7514844AA000DC1312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5951A7414844AA000DC1312 /* Air21.app */,
+				B5951AA314844AA000DC1312 /* Air21Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5951A7714844AA000DC1312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5951A7814844AA000DC1312 /* UIKit.framework */,
+				B5951A7A14844AA000DC1312 /* Foundation.framework */,
+				B5951A7C14844AA000DC1312 /* CoreGraphics.framework */,
+				B5951AA414844AA000DC1312 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5951A7E14844AA000DC1312 /* Air21 */ = {
+			isa = PBXGroup;
+			children = (
+				B5951A8714844AA000DC1312 /* AppDelegate.h */,
+				B5951A8814844AA000DC1312 /* AppDelegate.m */,
+				B5951A8A14844AA000DC1312 /* FirstViewController.h */,
+				B5951A8B14844AA000DC1312 /* FirstViewController.m */,
+				B5951A8D14844AA000DC1312 /* first.png */,
+				B5951A8F14844AA000DC1312 /* first@2x.png */,
+				B5951A9114844AA000DC1312 /* SecondViewController.h */,
+				B5951A9214844AA000DC1312 /* SecondViewController.m */,
+				B5951A9414844AA000DC1312 /* second.png */,
+				B5951A9614844AA000DC1312 /* second@2x.png */,
+				B5951A9814844AA000DC1312 /* FirstViewController.xib */,
+				B5951A9B14844AA000DC1312 /* SecondViewController.xib */,
+				B5951A7F14844AA000DC1312 /* Supporting Files */,
+			);
+			path = Air21;
+			sourceTree = "<group>";
+		};
+		B5951A7F14844AA000DC1312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5951A8014844AA000DC1312 /* Air21-Info.plist */,
+				B5951A8114844AA000DC1312 /* InfoPlist.strings */,
+				B5951A8414844AA000DC1312 /* main.m */,
+				B5951A8614844AA000DC1312 /* Air21-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5951AAA14844AA000DC1312 /* Air21Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B5951AB014844AA100DC1312 /* Air21Tests.h */,
+				B5951AB114844AA100DC1312 /* Air21Tests.m */,
+				B5951AAB14844AA000DC1312 /* Supporting Files */,
+			);
+			path = Air21Tests;
+			sourceTree = "<group>";
+		};
+		B5951AAB14844AA000DC1312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5951AAC14844AA000DC1312 /* Air21Tests-Info.plist */,
+				B5951AAD14844AA000DC1312 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5951A7314844AA000DC1312 /* Air21 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5951AB514844AA100DC1312 /* Build configuration list for PBXNativeTarget "Air21" */;
+			buildPhases = (
+				B5951A7014844AA000DC1312 /* Sources */,
+				B5951A7114844AA000DC1312 /* Frameworks */,
+				B5951A7214844AA000DC1312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Air21;
+			productName = Air21;
+			productReference = B5951A7414844AA000DC1312 /* Air21.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5951AA214844AA000DC1312 /* Air21Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5951AB814844AA100DC1312 /* Build configuration list for PBXNativeTarget "Air21Tests" */;
+			buildPhases = (
+				B5951A9E14844AA000DC1312 /* Sources */,
+				B5951A9F14844AA000DC1312 /* Frameworks */,
+				B5951AA014844AA000DC1312 /* Resources */,
+				B5951AA114844AA000DC1312 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5951AA914844AA000DC1312 /* PBXTargetDependency */,
+			);
+			name = Air21Tests;
+			productName = Air21Tests;
+			productReference = B5951AA314844AA000DC1312 /* Air21Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5951A6B14844AA000DC1312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = SAS;
+			};
+			buildConfigurationList = B5951A6E14844AA000DC1312 /* Build configuration list for PBXProject "Air21" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B5951A6914844AA000DC1312;
+			productRefGroup = B5951A7514844AA000DC1312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5951A7314844AA000DC1312 /* Air21 */,
+				B5951AA214844AA000DC1312 /* Air21Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5951A7214844AA000DC1312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5951A8314844AA000DC1312 /* InfoPlist.strings in Resources */,
+				B5951A8E14844AA000DC1312 /* first.png in Resources */,
+				B5951A9014844AA000DC1312 /* first@2x.png in Resources */,
+				B5951A9514844AA000DC1312 /* second.png in Resources */,
+				B5951A9714844AA000DC1312 /* second@2x.png in Resources */,
+				B5951A9A14844AA000DC1312 /* FirstViewController.xib in Resources */,
+				B5951A9D14844AA000DC1312 /* SecondViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5951AA014844AA000DC1312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5951AAF14844AA000DC1312 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5951AA114844AA000DC1312 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5951A7014844AA000DC1312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5951A8514844AA000DC1312 /* main.m in Sources */,
+				B5951A8914844AA000DC1312 /* AppDelegate.m in Sources */,
+				B5951A8C14844AA000DC1312 /* FirstViewController.m in Sources */,
+				B5951A9314844AA000DC1312 /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5951A9E14844AA000DC1312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5951AB214844AA100DC1312 /* Air21Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5951AA914844AA000DC1312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5951A7314844AA000DC1312 /* Air21 */;
+			targetProxy = B5951AA814844AA000DC1312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5951A8114844AA000DC1312 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5951A8214844AA000DC1312 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5951A9814844AA000DC1312 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5951A9914844AA000DC1312 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		B5951A9B14844AA000DC1312 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5951A9C14844AA000DC1312 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+		B5951AAD14844AA000DC1312 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5951AAE14844AA000DC1312 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5951AB314844AA100DC1312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5951AB414844AA100DC1312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5951AB614844AA100DC1312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
+				INFOPLIST_FILE = "Air21/Air21-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5951AB714844AA100DC1312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
+				INFOPLIST_FILE = "Air21/Air21-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B5951AB914844AA100DC1312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Air21.app/Air21";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
+				INFOPLIST_FILE = "Air21Tests/Air21Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B5951ABA14844AA100DC1312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Air21.app/Air21";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
+				INFOPLIST_FILE = "Air21Tests/Air21Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5951A6E14844AA000DC1312 /* Build configuration list for PBXProject "Air21" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5951AB314844AA100DC1312 /* Debug */,
+				B5951AB414844AA100DC1312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5951AB514844AA100DC1312 /* Build configuration list for PBXNativeTarget "Air21" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5951AB614844AA100DC1312 /* Debug */,
+				B5951AB714844AA100DC1312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5951AB814844AA100DC1312 /* Build configuration list for PBXNativeTarget "Air21Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5951AB914844AA100DC1312 /* Debug */,
+				B5951ABA14844AA100DC1312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5951A6B14844AA000DC1312 /* Project object */;
+}
