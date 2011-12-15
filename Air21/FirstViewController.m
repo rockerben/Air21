@@ -1,70 +1,73 @@
 //
-//  FirstViewController.m
-//  Air21
+//  SurfsUpViewController.m
 //
-//  Created by Ben Cortez on 29/11/11.
-//  Copyright (c) 2011 SAS. All rights reserved.
+//  Air21 Mobile
+//
+//  Created by Ben Cortez on 7/1/11.
+//  Copyright 2011 RedMedia. All rights reserved.
 //
 
 #import "FirstViewController.h"
+#import "DetailViewController.h"
+
 
 @implementation FirstViewController
+@synthesize contents = ivContents;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.title = NSLocalizedString(@"First", @"First");
-        self.tabBarItem.image = [UIImage imageNamed:@"first"];
-    }
-    return self;
-}
-							
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Release any cached data, images, etc that aren't in use.
-}
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
+    NSArray *firstSection = [NSArray arrayWithObjects:@"Rate Calculator", nil];
+	NSArray *secondSection = [NSArray arrayWithObjects:@"Tracking", nil];
+    NSMutableArray * array = [[NSMutableArray alloc] initWithObjects:firstSection, secondSection, nil];
+    [self setContents:array];
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)viewDidUnload
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+    return 2;
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    [super viewWillAppear:animated];
+    return 1;
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super viewDidAppear:animated];
+    NSArray *sectionContents = [[self contents] objectAtIndex:[indexPath section]];
+	NSString *contentForThisRow = [sectionContents objectAtIndex:0];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    [[cell textLabel] setText:contentForThisRow];
+    return cell;
 }
 
-- (void)viewWillDisappear:(BOOL)animated
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	[super viewWillDisappear:animated];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DetailViewController *detailView = [[DetailViewController alloc] init];
+    if ([indexPath section] == 0)
+        NSLog (@"xxx");
+    else if ([indexPath section] == 1)
+        [[self navigationController] pushViewController:detailView animated:YES];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    UITableViewCell *cell = [self tableView:[self tableView] cellForRowAtIndexPath:indexPath];
+    return [cell frame].size.height;
 }
 
 @end

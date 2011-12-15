@@ -1,15 +1,15 @@
 //
 //  AppDelegate.m
-//  Air21
 //
-//  Created by Ben Cortez on 29/11/11.
-//  Copyright (c) 2011 SAS. All rights reserved.
+//  Air21 Mobile
 //
+//  Created by Ben Cortez on 7/1/11.
+//  Copyright 2011 RedMedia. All rights reserved.
+//
+
 
 #import "AppDelegate.h"
-
 #import "FirstViewController.h"
-
 #import "SecondViewController.h"
 
 @implementation AppDelegate
@@ -17,14 +17,53 @@
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 
+- (void)customizeAppearance
+{
+    // Create resizable images
+    UIImage *gradientImage44 = [[UIImage imageNamed:@"surf_gradient_textured_44"] 
+                                resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    UIImage *gradientImage32 = [[UIImage imageNamed:@"surf_gradient_textured_32"] 
+                                resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+    
+    // Set the background image for *all* UINavigationBars
+    [[UINavigationBar appearance] setBackgroundImage:gradientImage44 
+                                       forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:gradientImage32 
+                                       forBarMetrics:UIBarMetricsLandscapePhone];
+    
+    // Customize the title text for *all* UINavigationBars
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     [NSDictionary dictionaryWithObjectsAndKeys:
+      [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], 
+      UITextAttributeTextColor, 
+      [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8], 
+      UITextAttributeTextShadowColor, 
+      [NSValue valueWithUIOffset:UIOffsetMake(0, -1)], 
+      UITextAttributeTextShadowOffset, 
+      [UIFont fontWithName:@"Arial-Bold" size:0.0], 
+      UITextAttributeFont, 
+      nil]];
+    
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self customizeAppearance];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
-    UIViewController *viewController1 = [[FirstViewController alloc] initWithNibName:@"FirstViewController" bundle:nil];
-    UIViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+   
+    FirstViewController *vc = [[FirstViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    [vc setTitle:@"Air21"];
+
+    SecondViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navVC, viewController2, nil];
+    
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;

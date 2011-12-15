@@ -1,10 +1,12 @@
 //
 //  SecondViewController.m
-//  Air21
 //
-//  Created by Ben Cortez on 29/11/11.
-//  Copyright (c) 2011 SAS. All rights reserved.
+//  Air21 Mobile
 //
+//  Created by Ben Cortez on 7/1/11.
+//  Copyright 2011 RedMedia. All rights reserved.
+//
+
 
 #import "SecondViewController.h"
 
