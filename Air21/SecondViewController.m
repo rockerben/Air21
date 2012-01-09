@@ -9,8 +9,19 @@
 
 
 #import "SecondViewController.h"
+#import "DetailViewController.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "MBProgressHUD.h"
+
+static        NSString *staticRequest = nil;
+
 
 @implementation SecondViewController
+@synthesize code = ivCode, _textField = textField;
+
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,6 +78,89 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField*)_textField {
+  ///ivCode = textField.text;
+  [textField resignFirstResponder];
+ return TRUE;
+
+}
+
+- (IBAction) btnMoveTo:(id)sender;
+{
+    // Start request
+  [textField resignFirstResponder];
+
+    NSURL *url = [NSURL URLWithString:@"http://www.af2100.com/tracking/mtrack.jsp"];
+    
+    //NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:@"http://www.af2100.com/tracking/api.jsp?a=%@",code] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    [request setPostValue:textField.text forKey:@"a"];
+    [request setPostValue:@"Airwaybill" forKey:@"radioTrackBy"];
+    
+    [request setDelegate:self];
+    [request startAsynchronous];
+    
+   
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Tracking...";
+    
+    
+    
+    
+    
+    
+    
+}
+
+
++ (NSString*)response {
+    return staticRequest;
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{    
+    if (request.responseStatusCode == 400) {
+        NSLog(@"Invalid code"); 
+        
+
+        } else if (request.responseStatusCode == 403) {
+        NSLog(@"Code already used");
+    } else if (request.responseStatusCode == 200) {
+           
+    
+
+        staticRequest = [request responseString];
+         NSLog(@"process Name: %@",staticRequest);
+   
+        DetailViewController *detailView = [[DetailViewController alloc] init];
+        [self presentModalViewController:detailView animated:YES];
+               
+    }
+        
+    else {
+        NSLog(@"Unexpected error");
+    }
+    
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
+    }
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{    
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    NSLog(@"Need internet connection");
+    UIAlertView *alert = [[UIAlertView alloc] init];
+	[alert setTitle:@"No Internet Connection"];
+	//[alert setMessage:@"Proceed to Settings"];
+	[alert setDelegate:self];
+	[alert addButtonWithTitle:@"Ok"];
+	[alert show];
+//prefs:root=General&path=Network;
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=General&path=Network"]];
 }
 
 @end

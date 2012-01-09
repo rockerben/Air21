@@ -9,22 +9,58 @@
 
 
 #import "DetailViewController.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "MBProgressHUD.h"
+#import "SecondViewController.h"
+#import "AboutViewController.h"
 
 @implementation DetailViewController
-@synthesize webView;
+@synthesize webView, closeButton, about;
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Loading Results...";
+
+    
     self.title = @"Shipment Tracking";
+    //[webView setBackgroundColor:[UIColor purpleColor]];
+    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/mtrack.jsp"]]];
+    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/mtrack.jsp"]]];
+     NSLog(@"process Name: %@",[SecondViewController response]);
+    [webView loadHTMLString:[SecondViewController response] baseURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/"]];
     
-    [webView setBackgroundColor:[UIColor purpleColor]];
-        
-    //[webView loadHTMLString:@"This is a completely transparent UIWebView. Notice the missing gradient at the top and bottom as you scroll up and down." baseURL:nil];
+  
+
     
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/mindex.jsp"]]];
+            
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+
+}
+
+- (IBAction) btnClose:(id)sender;
+{
+    [self dismissModalViewControllerAnimated:YES];
+    
+}
+
+- (IBAction) btnAbout:(id)sender;
+{
+    AboutViewController* vc = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+       
+    vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    
+    //[self presentModalViewController:underMapViewController animated:YES];
+    [self presentModalViewController:vc animated:YES];
+    
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  SurfsUpViewController.m
+//  FirstViewController.m
 //
 //  Air21 Mobile
 //
@@ -23,6 +23,11 @@
 	NSArray *secondSection = [NSArray arrayWithObjects:@"Tracking", nil];
     NSMutableArray * array = [[NSMutableArray alloc] initWithObjects:firstSection, secondSection, nil];
     [self setContents:array];
+   
+    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_sand"]]];
+    
+     
+    
     [super viewDidLoad];
 }
 

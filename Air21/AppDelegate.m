@@ -48,23 +48,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [self customizeAppearance];
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //[self customizeAppearance];
+    
+    [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     
     // Override point for customization after application launch.
    
-    FirstViewController *vc = [[FirstViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    [vc setTitle:@"Air21"];
-
+    //FirstViewController *vc = [[FirstViewController alloc] initWithStyle:UITableViewStyleGrouped];
+    //[vc setTitle:@"Air21"];
     SecondViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
     
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
+    //UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
     
-    self.tabBarController = [[UITabBarController alloc] init];
+    //self.tabBarController = [[UITabBarController alloc] init];
     
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navVC, viewController2, nil];
+    //self.tabBarController.viewControllers = [NSArray arrayWithObjects:navVC, viewController2, nil];
     
-    self.window.rootViewController = self.tabBarController;
+    //self.window.rootViewController = self.tabBarController;
+    self.window.rootViewController = viewController2;
     [self.window makeKeyAndVisible];
     return YES;
 }
