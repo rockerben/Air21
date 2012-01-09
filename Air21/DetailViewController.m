@@ -56,9 +56,8 @@
 {
     AboutViewController* vc = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
        
-    vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     
-    //[self presentModalViewController:underMapViewController animated:YES];
     [self presentModalViewController:vc animated:YES];
     
 }
