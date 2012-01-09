@@ -9,7 +9,6 @@
 
 
 #import "AppDelegate.h"
-#import "FirstViewController.h"
 #import "SecondViewController.h"
 
 @implementation AppDelegate
@@ -50,22 +49,10 @@
 {
     
     //[self customizeAppearance];
-    
     [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     
     // Override point for customization after application launch.
-   
-    //FirstViewController *vc = [[FirstViewController alloc] initWithStyle:UITableViewStyleGrouped];
-    //[vc setTitle:@"Air21"];
     SecondViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    
-    //UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
-    
-    //self.tabBarController = [[UITabBarController alloc] init];
-    
-    //self.tabBarController.viewControllers = [NSArray arrayWithObjects:navVC, viewController2, nil];
-    
-    //self.window.rootViewController = self.tabBarController;
     self.window.rootViewController = viewController2;
     [self.window makeKeyAndVisible];
     return YES;

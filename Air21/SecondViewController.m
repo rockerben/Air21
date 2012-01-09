@@ -81,21 +81,18 @@ static        NSString *staticRequest = nil;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField*)_textField {
-  ///ivCode = textField.text;
-  [textField resignFirstResponder];
- return TRUE;
+    [textField resignFirstResponder];
+    return TRUE;
 
 }
 
 - (IBAction) btnMoveTo:(id)sender;
 {
     // Start request
-  [textField resignFirstResponder];
+    [textField resignFirstResponder];
 
     NSURL *url = [NSURL URLWithString:@"http://www.af2100.com/tracking/mtrack.jsp"];
-    
-    //NSURL *url = [NSURL URLWithString:[[NSString stringWithFormat:@"http://www.af2100.com/tracking/api.jsp?a=%@",code] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    
+
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     [request setPostValue:textField.text forKey:@"a"];
     [request setPostValue:@"Airwaybill" forKey:@"radioTrackBy"];
@@ -103,16 +100,8 @@ static        NSString *staticRequest = nil;
     [request setDelegate:self];
     [request startAsynchronous];
     
-   
-    
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Tracking...";
-    
-    
-    
-    
-    
-    
+    hud.labelText = @"Loading Results...";
     
 }
 
@@ -125,14 +114,9 @@ static        NSString *staticRequest = nil;
 {    
     if (request.responseStatusCode == 400) {
         NSLog(@"Invalid code"); 
-        
-
         } else if (request.responseStatusCode == 403) {
         NSLog(@"Code already used");
     } else if (request.responseStatusCode == 200) {
-           
-    
-
         staticRequest = [request responseString];
          NSLog(@"process Name: %@",staticRequest);
    
@@ -155,12 +139,9 @@ static        NSString *staticRequest = nil;
     NSLog(@"Need internet connection");
     UIAlertView *alert = [[UIAlertView alloc] init];
 	[alert setTitle:@"No Internet Connection"];
-	//[alert setMessage:@"Proceed to Settings"];
 	[alert setDelegate:self];
 	[alert addButtonWithTitle:@"Ok"];
 	[alert show];
-//prefs:root=General&path=Network;
-    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=General&path=Network"]];
 }
 
 @end

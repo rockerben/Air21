@@ -9,7 +9,7 @@
 
 @interface DetailViewController : UIViewController<UIWebViewDelegate>
 {
-    IBOutlet UIWebView* webView;
+    IBOutlet UIWebView * webView;
     IBOutlet UIButton * closeButton;
     IBOutlet UIButton * about;
   
@@ -17,7 +17,7 @@
     
 }
 
-@property (nonatomic, retain) IBOutlet UIWebView* webView;
+@property (nonatomic, retain) IBOutlet UIWebView * webView;
 @property (nonatomic, retain) IBOutlet UIButton *closeButton;
 @property (nonatomic, retain) IBOutlet UIButton *about;
 

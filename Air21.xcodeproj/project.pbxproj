@@ -25,9 +25,7 @@
 		B5951A8314844AA000DC1312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5951A8114844AA000DC1312 /* InfoPlist.strings */; };
 		B5951A8514844AA000DC1312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A8414844AA000DC1312 /* main.m */; };
 		B5951A8914844AA000DC1312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A8814844AA000DC1312 /* AppDelegate.m */; };
-		B5951A8C14844AA000DC1312 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A8B14844AA000DC1312 /* FirstViewController.m */; };
 		B5951A9314844AA000DC1312 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951A9214844AA000DC1312 /* SecondViewController.m */; };
-		B5951A9A14844AA000DC1312 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5951A9814844AA000DC1312 /* FirstViewController.xib */; };
 		B5951A9D14844AA000DC1312 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5951A9B14844AA000DC1312 /* SecondViewController.xib */; };
 		B5951AA514844AA000DC1312 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951AA414844AA000DC1312 /* SenTestingKit.framework */; };
 		B5951AA614844AA000DC1312 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951A7814844AA000DC1312 /* UIKit.framework */; };
@@ -96,11 +94,8 @@
 		B5951A8614844AA000DC1312 /* Air21-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Air21-Prefix.pch"; sourceTree = "<group>"; };
 		B5951A8714844AA000DC1312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5951A8814844AA000DC1312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5951A8A14844AA000DC1312 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B5951A8B14844AA000DC1312 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		B5951A9114844AA000DC1312 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B5951A9214844AA000DC1312 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		B5951A9914844AA000DC1312 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		B5951A9C14844AA000DC1312 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
 		B5951AA314844AA000DC1312 /* Air21Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Air21Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5951AA414844AA000DC1312 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -225,8 +220,6 @@
 				B58B94FB14A337580062509D /* MBProgressHUD.m */,
 				B5951A8714844AA000DC1312 /* AppDelegate.h */,
 				B5951A8814844AA000DC1312 /* AppDelegate.m */,
-				B5951A8A14844AA000DC1312 /* FirstViewController.h */,
-				B5951A8B14844AA000DC1312 /* FirstViewController.m */,
 				B56E5C271499B66700497824 /* DetailViewController.h */,
 				B56E5C281499B68700497824 /* DetailViewController.m */,
 				B5951A9114844AA000DC1312 /* SecondViewController.h */,
@@ -234,7 +227,6 @@
 				B5F9EFF114B82E2500E92D6F /* AboutViewController.h */,
 				B5F9EFF214B82E2500E92D6F /* AboutViewController.m */,
 				B5F9EFF314B82E2500E92D6F /* AboutViewController.xib */,
-				B5951A9814844AA000DC1312 /* FirstViewController.xib */,
 				B56E5C2A1499B6B700497824 /* DetailView.xib */,
 				B5951A9B14844AA000DC1312 /* SecondViewController.xib */,
 				B5951A7F14844AA000DC1312 /* Supporting Files */,
@@ -358,7 +350,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5951A8314844AA000DC1312 /* InfoPlist.strings in Resources */,
-				B5951A9A14844AA000DC1312 /* FirstViewController.xib in Resources */,
 				B5951A9D14844AA000DC1312 /* SecondViewController.xib in Resources */,
 				B56E5C2B1499B6B700497824 /* DetailView.xib in Resources */,
 				B5B1CDFE149F7A9000DE42FD /* Air21-Tracking-login.jpg in Resources */,
@@ -405,7 +396,6 @@
 			files = (
 				B5951A8514844AA000DC1312 /* main.m in Sources */,
 				B5951A8914844AA000DC1312 /* AppDelegate.m in Sources */,
-				B5951A8C14844AA000DC1312 /* FirstViewController.m in Sources */,
 				B5951A9314844AA000DC1312 /* SecondViewController.m in Sources */,
 				B56E5C291499B68700497824 /* DetailViewController.m in Sources */,
 				B58B94FC14A337580062509D /* MBProgressHUD.m in Sources */,
@@ -447,14 +437,6 @@
 				B5951A8214844AA000DC1312 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B5951A9814844AA000DC1312 /* FirstViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5951A9914844AA000DC1312 /* en */,
-			);
-			name = FirstViewController.xib;
 			sourceTree = "<group>";
 		};
 		B5951A9B14844AA000DC1312 /* SecondViewController.xib */ = {
