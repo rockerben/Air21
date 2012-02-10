@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B500E29914B851F1006BCFE6 /* air21_mobile.png in Resources */ = {isa = PBXBuildFile; fileRef = B500E29814B851F1006BCFE6 /* air21_mobile.png */; };
+		B553E7FD14DAB14B000055FD /* mwl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B553E7FC14DAB14B000055FD /* mwl.jpg */; };
 		B56E5C291499B68700497824 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E5C281499B68700497824 /* DetailViewController.m */; };
 		B56E5C2B1499B6B700497824 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56E5C2A1499B6B700497824 /* DetailView.xib */; };
 		B58B94FC14A337580062509D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B94FB14A337580062509D /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -40,6 +41,7 @@
 		B5B1CDFE149F7A9000DE42FD /* Air21-Tracking-login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B1CDFD149F7A9000DE42FD /* Air21-Tracking-login.jpg */; };
 		B5B1CE01149F7C7800DE42FD /* air21logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B1CE00149F7C7700DE42FD /* air21logo.jpg */; };
 		B5B1CE0814A01C2800DE42FD /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B1CE0714A01C2700DE42FD /* Main.png */; };
+		B5F483A314BC3C4D00A072D9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F483A214BC3C4D00A072D9 /* Icon.png */; };
 		B5F51AEA14A063EF00A5E4EA /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F51AE714A063EF00A5E4EA /* bg.png */; };
 		B5F51AEB14A063EF00A5E4EA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F51AE814A063EF00A5E4EA /* logo.png */; };
 		B5F51AEC14A063EF00A5E4EA /* shipment-tracking.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F51AE914A063EF00A5E4EA /* shipment-tracking.png */; };
@@ -59,6 +61,7 @@
 
 /* Begin PBXFileReference section */
 		B500E29814B851F1006BCFE6 /* air21_mobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = air21_mobile.png; sourceTree = "<group>"; };
+		B553E7FC14DAB14B000055FD /* mwl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mwl.jpg; sourceTree = "<group>"; };
 		B56E5C271499B66700497824 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B56E5C281499B68700497824 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B56E5C2A1499B6B700497824 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 		B5B1CDFD149F7A9000DE42FD /* Air21-Tracking-login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Air21-Tracking-login.jpg"; sourceTree = "<group>"; };
 		B5B1CE00149F7C7700DE42FD /* air21logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = air21logo.jpg; sourceTree = "<group>"; };
 		B5B1CE0714A01C2700DE42FD /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		B5F483A214BC3C4D00A072D9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B5F51AE714A063EF00A5E4EA /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		B5F51AE814A063EF00A5E4EA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B5F51AE914A063EF00A5E4EA /* shipment-tracking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shipment-tracking.png"; sourceTree = "<group>"; };
@@ -267,6 +271,8 @@
 		B5951B851486166200DC1312 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				B553E7FC14DAB14B000055FD /* mwl.jpg */,
+				B5F483A214BC3C4D00A072D9 /* Icon.png */,
 				B5F51AE714A063EF00A5E4EA /* bg.png */,
 				B5F51AE814A063EF00A5E4EA /* logo.png */,
 				B5F51AE914A063EF00A5E4EA /* shipment-tracking.png */,
@@ -360,6 +366,8 @@
 				B5F51AEC14A063EF00A5E4EA /* shipment-tracking.png in Resources */,
 				B5F9EFF514B82E2500E92D6F /* AboutViewController.xib in Resources */,
 				B500E29914B851F1006BCFE6 /* air21_mobile.png in Resources */,
+				B5F483A314BC3C4D00A072D9 /* Icon.png in Resources */,
+				B553E7FD14DAB14B000055FD /* mwl.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,8 +470,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -478,7 +490,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -487,8 +501,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -496,8 +514,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -528,6 +548,10 @@
 		B5951AB914844AA100DC1312 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Air21.app/Air21";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -536,6 +560,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
 				INFOPLIST_FILE = "Air21Tests/Air21Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -545,6 +570,10 @@
 		B5951ABA14844AA100DC1312 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Air21.app/Air21";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -553,6 +582,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
 				INFOPLIST_FILE = "Air21Tests/Air21Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;

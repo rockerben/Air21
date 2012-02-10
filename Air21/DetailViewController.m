@@ -24,20 +24,13 @@
     [super viewDidLoad];
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
     hud.labelText = @"Loading Results...";
 
-    
     self.title = @"Shipment Tracking";
-    //[webView setBackgroundColor:[UIColor purpleColor]];
-    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/mtrack.jsp"]]];
-    //[webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/mtrack.jsp"]]];
-     NSLog(@"process Name: %@",[SecondViewController response]);
-    [webView loadHTMLString:[SecondViewController response] baseURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/"]];
     
-  
-
+    [webView loadHTMLString:[SecondViewController response] baseURL:[NSURL URLWithString:@"http://www.af2100.com/mobile/"]];
     
-            
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView

@@ -76,8 +76,6 @@ static        NSString *staticRequest = nil;
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    //return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     return NO;
 }
 
@@ -119,7 +117,7 @@ static        NSString *staticRequest = nil;
         NSLog(@"Code already used");
     } else if (request.responseStatusCode == 200) {
         staticRequest = [request responseString];
-         NSLog(@"process Name: %@",staticRequest);
+        //NSLog(@"process Name: %@",staticRequest);
    
         DetailViewController *detailView = [[DetailViewController alloc] init];
         [self presentModalViewController:detailView animated:YES];
