@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B500E29914B851F1006BCFE6 /* air21_mobile.png in Resources */ = {isa = PBXBuildFile; fileRef = B500E29814B851F1006BCFE6 /* air21_mobile.png */; };
-		B553E7FD14DAB14B000055FD /* mwl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B553E7FC14DAB14B000055FD /* mwl.jpg */; };
+		B51BE31314FB691A0088B523 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B51BE31214FB691A0088B523 /* Icon@2x.png */; };
 		B56E5C291499B68700497824 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B56E5C281499B68700497824 /* DetailViewController.m */; };
 		B56E5C2B1499B6B700497824 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56E5C2A1499B6B700497824 /* DetailView.xib */; };
+		B572A2CD14FF746F007D8C95 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B572A2CC14FF746F007D8C95 /* bg.jpg */; };
 		B58B94FC14A337580062509D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B94FB14A337580062509D /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B58B951714A343740062509D /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B950414A343730062509D /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		B58B951814A343740062509D /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = B58B950714A343730062509D /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -33,18 +33,19 @@
 		B5951AA714844AA000DC1312 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5951A7A14844AA000DC1312 /* Foundation.framework */; };
 		B5951AAF14844AA000DC1312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5951AAD14844AA000DC1312 /* InfoPlist.strings */; };
 		B5951AB214844AA100DC1312 /* Air21Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5951AB114844AA100DC1312 /* Air21Tests.m */; };
+		B59DC58714F73CF0001E960A /* buttons-info2.png in Resources */ = {isa = PBXBuildFile; fileRef = B59DC58514F73CF0001E960A /* buttons-info2.png */; };
+		B59DC58814F73CF0001E960A /* buttons_track.png in Resources */ = {isa = PBXBuildFile; fileRef = B59DC58614F73CF0001E960A /* buttons_track.png */; };
+		B59DC59414FAC714001E960A /* mwl.png in Resources */ = {isa = PBXBuildFile; fileRef = B59DC59314FAC714001E960A /* mwl.png */; };
+		B59DC59614FACF84001E960A /* Attrib.txt in Resources */ = {isa = PBXBuildFile; fileRef = B59DC59514FACF84001E960A /* Attrib.txt */; };
 		B59FA03914A3F82A00251A11 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FA03814A3F82A00251A11 /* CFNetwork.framework */; };
 		B59FA03B14A3F84200251A11 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FA03A14A3F84200251A11 /* SystemConfiguration.framework */; };
 		B59FA03D14A3F85100251A11 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FA03C14A3F85100251A11 /* MobileCoreServices.framework */; };
 		B59FA03F14A3F87B00251A11 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B59FA03E14A3F87B00251A11 /* libz.1.2.5.dylib */; };
 		B59FA04314A3FAAB00251A11 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B59FA04214A3FAAB00251A11 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		B5B1CDFE149F7A9000DE42FD /* Air21-Tracking-login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B1CDFD149F7A9000DE42FD /* Air21-Tracking-login.jpg */; };
-		B5B1CE01149F7C7800DE42FD /* air21logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B5B1CE00149F7C7700DE42FD /* air21logo.jpg */; };
-		B5B1CE0814A01C2800DE42FD /* Main.png in Resources */ = {isa = PBXBuildFile; fileRef = B5B1CE0714A01C2700DE42FD /* Main.png */; };
+		B5CD65BC14FC6CE900C6963F /* shipmenttracking.png in Resources */ = {isa = PBXBuildFile; fileRef = B5CD65BB14FC6CE900C6963F /* shipmenttracking.png */; };
+		B5DE65F414FC943800338BE7 /* air21_hotlines.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DE65F314FC943800338BE7 /* air21_hotlines.png */; };
 		B5F483A314BC3C4D00A072D9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F483A214BC3C4D00A072D9 /* Icon.png */; };
-		B5F51AEA14A063EF00A5E4EA /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F51AE714A063EF00A5E4EA /* bg.png */; };
 		B5F51AEB14A063EF00A5E4EA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F51AE814A063EF00A5E4EA /* logo.png */; };
-		B5F51AEC14A063EF00A5E4EA /* shipment-tracking.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F51AE914A063EF00A5E4EA /* shipment-tracking.png */; };
 		B5F9EFF414B82E2500E92D6F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F9EFF214B82E2500E92D6F /* AboutViewController.m */; };
 		B5F9EFF514B82E2500E92D6F /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F9EFF314B82E2500E92D6F /* AboutViewController.xib */; };
 /* End PBXBuildFile section */
@@ -60,11 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B500E29814B851F1006BCFE6 /* air21_mobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = air21_mobile.png; sourceTree = "<group>"; };
-		B553E7FC14DAB14B000055FD /* mwl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mwl.jpg; sourceTree = "<group>"; };
+		B51BE31214FB691A0088B523 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B56E5C271499B66700497824 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B56E5C281499B68700497824 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B56E5C2A1499B6B700497824 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		B572A2CC14FF746F007D8C95 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		B58B94FA14A337580062509D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		B58B94FB14A337580062509D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		B58B950314A343730062509D /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASIAuthenticationDialog.h; path = Air21/ASIHTTPRequest/ASIAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -106,19 +107,20 @@
 		B5951AAE14844AA000DC1312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5951AB014844AA100DC1312 /* Air21Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Air21Tests.h; sourceTree = "<group>"; };
 		B5951AB114844AA100DC1312 /* Air21Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Air21Tests.m; sourceTree = "<group>"; };
+		B59DC58514F73CF0001E960A /* buttons-info2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons-info2.png"; sourceTree = "<group>"; };
+		B59DC58614F73CF0001E960A /* buttons_track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttons_track.png; sourceTree = "<group>"; };
+		B59DC59314FAC714001E960A /* mwl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mwl.png; sourceTree = "<group>"; };
+		B59DC59514FACF84001E960A /* Attrib.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Attrib.txt; sourceTree = "<group>"; };
 		B59FA03814A3F82A00251A11 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		B59FA03A14A3F84200251A11 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B59FA03C14A3F85100251A11 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B59FA03E14A3F87B00251A11 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		B59FA04114A3FAAB00251A11 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Air21/ASIHTTPRequest/Reachability.h; sourceTree = "<group>"; };
 		B59FA04214A3FAAB00251A11 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Air21/ASIHTTPRequest/Reachability.m; sourceTree = "<group>"; };
-		B5B1CDFD149F7A9000DE42FD /* Air21-Tracking-login.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Air21-Tracking-login.jpg"; sourceTree = "<group>"; };
-		B5B1CE00149F7C7700DE42FD /* air21logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = air21logo.jpg; sourceTree = "<group>"; };
-		B5B1CE0714A01C2700DE42FD /* Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Main.png; sourceTree = "<group>"; };
+		B5CD65BB14FC6CE900C6963F /* shipmenttracking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shipmenttracking.png; sourceTree = "<group>"; };
+		B5DE65F314FC943800338BE7 /* air21_hotlines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = air21_hotlines.png; sourceTree = "<group>"; };
 		B5F483A214BC3C4D00A072D9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		B5F51AE714A063EF00A5E4EA /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		B5F51AE814A063EF00A5E4EA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		B5F51AE914A063EF00A5E4EA /* shipment-tracking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shipment-tracking.png"; sourceTree = "<group>"; };
 		B5F9EFF114B82E2500E92D6F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		B5F9EFF214B82E2500E92D6F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		B5F9EFF314B82E2500E92D6F /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
@@ -271,15 +273,16 @@
 		B5951B851486166200DC1312 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				B553E7FC14DAB14B000055FD /* mwl.jpg */,
+				B572A2CC14FF746F007D8C95 /* bg.jpg */,
+				B5DE65F314FC943800338BE7 /* air21_hotlines.png */,
+				B5CD65BB14FC6CE900C6963F /* shipmenttracking.png */,
+				B51BE31214FB691A0088B523 /* Icon@2x.png */,
+				B59DC59514FACF84001E960A /* Attrib.txt */,
+				B59DC59314FAC714001E960A /* mwl.png */,
+				B59DC58514F73CF0001E960A /* buttons-info2.png */,
+				B59DC58614F73CF0001E960A /* buttons_track.png */,
 				B5F483A214BC3C4D00A072D9 /* Icon.png */,
-				B5F51AE714A063EF00A5E4EA /* bg.png */,
 				B5F51AE814A063EF00A5E4EA /* logo.png */,
-				B5F51AE914A063EF00A5E4EA /* shipment-tracking.png */,
-				B5B1CE00149F7C7700DE42FD /* air21logo.jpg */,
-				B5B1CDFD149F7A9000DE42FD /* Air21-Tracking-login.jpg */,
-				B500E29814B851F1006BCFE6 /* air21_mobile.png */,
-				B5B1CE0714A01C2700DE42FD /* Main.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -358,16 +361,17 @@
 				B5951A8314844AA000DC1312 /* InfoPlist.strings in Resources */,
 				B5951A9D14844AA000DC1312 /* SecondViewController.xib in Resources */,
 				B56E5C2B1499B6B700497824 /* DetailView.xib in Resources */,
-				B5B1CDFE149F7A9000DE42FD /* Air21-Tracking-login.jpg in Resources */,
-				B5B1CE01149F7C7800DE42FD /* air21logo.jpg in Resources */,
-				B5B1CE0814A01C2800DE42FD /* Main.png in Resources */,
-				B5F51AEA14A063EF00A5E4EA /* bg.png in Resources */,
 				B5F51AEB14A063EF00A5E4EA /* logo.png in Resources */,
-				B5F51AEC14A063EF00A5E4EA /* shipment-tracking.png in Resources */,
 				B5F9EFF514B82E2500E92D6F /* AboutViewController.xib in Resources */,
-				B500E29914B851F1006BCFE6 /* air21_mobile.png in Resources */,
 				B5F483A314BC3C4D00A072D9 /* Icon.png in Resources */,
-				B553E7FD14DAB14B000055FD /* mwl.jpg in Resources */,
+				B59DC58714F73CF0001E960A /* buttons-info2.png in Resources */,
+				B59DC58814F73CF0001E960A /* buttons_track.png in Resources */,
+				B59DC59414FAC714001E960A /* mwl.png in Resources */,
+				B59DC59614FACF84001E960A /* Attrib.txt in Resources */,
+				B51BE31314FB691A0088B523 /* Icon@2x.png in Resources */,
+				B5CD65BC14FC6CE900C6963F /* shipmenttracking.png in Resources */,
+				B5DE65F414FC943800338BE7 /* air21_hotlines.png in Resources */,
+				B572A2CD14FF746F007D8C95 /* bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,10 +530,13 @@
 		B5951AB614844AA100DC1312 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
 				INFOPLIST_FILE = "Air21/Air21-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -537,10 +544,13 @@
 		B5951AB714844AA100DC1312 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ben Cortez";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Air21/Air21-Prefix.pch";
 				INFOPLIST_FILE = "Air21/Air21-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "525786BF-3A64-4852-AD18-1820B1F3285E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

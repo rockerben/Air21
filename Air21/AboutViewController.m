@@ -1,15 +1,18 @@
 //
 //  AboutViewController.m
-//  Air21
 //
-//  Created by Ben Cortez on 7/01/12.
-//  Copyright (c) 2012 SAS. All rights reserved.
+//  Air21 Mobile
 //
+//  Created by Ben Cortez on 12/05/11.
+//  Copyright 2011 RedMedia. All rights reserved.
+//
+
 
 #import "AboutViewController.h"
 
 @implementation AboutViewController
-@synthesize goBack;
+@synthesize goBack, goURL;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,6 +56,13 @@
 {
     
     [self dismissModalViewControllerAnimated:YES];
+    
+}
+
+- (IBAction) btnGoUrl:(id)sender;
+{
+    NSURL *url = [NSURL URLWithString: @"http://redmediacrm.com"];
+    [[UIApplication sharedApplication] openURL: url];
     
 }
 

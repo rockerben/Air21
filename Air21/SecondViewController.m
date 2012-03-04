@@ -3,9 +3,10 @@
 //
 //  Air21 Mobile
 //
-//  Created by Ben Cortez on 7/1/11.
+//  Created by Ben Cortez on 12/05/11.
 //  Copyright 2011 RedMedia. All rights reserved.
 //
+
 
 
 #import "SecondViewController.h"
@@ -13,6 +14,7 @@
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
 #import "MBProgressHUD.h"
+#import "AboutViewController.h" 
 
 static        NSString *staticRequest = nil;
 
@@ -44,6 +46,7 @@ static        NSString *staticRequest = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -79,7 +82,25 @@ static        NSString *staticRequest = nil;
     return NO;
 }
 
+- (void)runCheck {
+    
+    NSString * b = [NSString stringWithFormat:@"http://www.af2100.com/tracking/mobile/index.jsp?awb=%@",textField.text];
+    NSURL *url = [NSURL URLWithString:b];
+    
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    
+    [request setRequestMethod:@"GET"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Loading Results...";
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField*)_textField {
+  
+    [self runCheck];
+    
     [textField resignFirstResponder];
     return TRUE;
 
@@ -87,20 +108,8 @@ static        NSString *staticRequest = nil;
 
 - (IBAction) btnMoveTo:(id)sender;
 {
-    // Start request
+    [self runCheck];
     [textField resignFirstResponder];
-
-    NSURL *url = [NSURL URLWithString:@"http://www.af2100.com/tracking/mtrack.jsp"];
-
-    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-    [request setPostValue:textField.text forKey:@"a"];
-    [request setPostValue:@"Airwaybill" forKey:@"radioTrackBy"];
-    
-    [request setDelegate:self];
-    [request startAsynchronous];
-    
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.labelText = @"Loading Results...";
     
 }
 
@@ -115,15 +124,11 @@ static        NSString *staticRequest = nil;
         NSLog(@"Invalid code"); 
         } else if (request.responseStatusCode == 403) {
         NSLog(@"Code already used");
-    } else if (request.responseStatusCode == 200) {
+        } else if (request.responseStatusCode == 200) {
         staticRequest = [request responseString];
-        //NSLog(@"process Name: %@",staticRequest);
-   
         DetailViewController *detailView = [[DetailViewController alloc] init];
         [self presentModalViewController:detailView animated:YES];
-               
     }
-        
     else {
         NSLog(@"Unexpected error");
     }
@@ -135,12 +140,12 @@ static        NSString *staticRequest = nil;
 - (void)requestFailed:(ASIHTTPRequest *)request
 {    
     [MBProgressHUD hideHUDForView:self.view animated:YES];
-    NSLog(@"Need internet connection");
     UIAlertView *alert = [[UIAlertView alloc] init];
-	[alert setTitle:@"No Internet Connection"];
+	[alert setTitle:@"Check your network connection"];
 	[alert setDelegate:self];
 	[alert addButtonWithTitle:@"Ok"];
 	[alert show];
 }
+
 
 @end

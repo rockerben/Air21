@@ -3,57 +3,44 @@
 //
 //  Air21 Mobile
 //
-//  Created by Ben Cortez on 7/1/11.
+//  Created by Ben Cortez on 12/05/11.
 //  Copyright 2011 RedMedia. All rights reserved.
 //
 
 
+
 #import "AppDelegate.h"
 #import "SecondViewController.h"
+#import "DetailViewController.h"
+#import "AboutViewController.h"
+
+
+
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 
-- (void)customizeAppearance
-{
-    // Create resizable images
-    UIImage *gradientImage44 = [[UIImage imageNamed:@"surf_gradient_textured_44"] 
-                                resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    UIImage *gradientImage32 = [[UIImage imageNamed:@"surf_gradient_textured_32"] 
-                                resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    
-    // Set the background image for *all* UINavigationBars
-    [[UINavigationBar appearance] setBackgroundImage:gradientImage44 
-                                       forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setBackgroundImage:gradientImage32 
-                                       forBarMetrics:UIBarMetricsLandscapePhone];
-    
-    // Customize the title text for *all* UINavigationBars
-    [[UINavigationBar appearance] setTitleTextAttributes:
-     [NSDictionary dictionaryWithObjectsAndKeys:
-      [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0], 
-      UITextAttributeTextColor, 
-      [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8], 
-      UITextAttributeTextShadowColor, 
-      [NSValue valueWithUIOffset:UIOffsetMake(0, -1)], 
-      UITextAttributeTextShadowOffset, 
-      [UIFont fontWithName:@"Arial-Bold" size:0.0], 
-      UITextAttributeFont, 
-      nil]];
-    
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    //[self customizeAppearance];
+    
     [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     
     // Override point for customization after application launch.
     SecondViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    self.window.rootViewController = viewController2;
+    [viewController2 setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Track Shipment" image:[UIImage imageNamed:@"buttons_track.png"] tag:100]];
+
+    AboutViewController  *vc3 = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+    [vc3 setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Info" image:[UIImage imageNamed:@"buttons-info2.png"] tag:102]];
+    
+    UITabBarController *tabController = [[UITabBarController alloc] init];     
+    [tabController setViewControllers:[NSArray arrayWithObjects:viewController2, vc3, nil]];
+    
+    
+    self.window.rootViewController = tabController;
     [self.window makeKeyAndVisible];
     return YES;
 }
