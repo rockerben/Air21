@@ -15,7 +15,7 @@
     
 }
 
-@property (nonatomic, retain) IBOutlet UIWebView * webView;
+@property (nonatomic, retain) IBOutlet UIWebView * _webView;
 @property (nonatomic, retain) IBOutlet UIButton *closeButton;
 
 - (IBAction) btnClose:(id)sender;

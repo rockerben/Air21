@@ -15,6 +15,7 @@
 #import "ASIFormDataRequest.h"
 #import "MBProgressHUD.h"
 #import "AboutViewController.h" 
+#import <QuartzCore/QuartzCore.h>
 
 static        NSString *staticRequest = nil;
 
@@ -79,7 +80,7 @@ static        NSString *staticRequest = nil;
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return NO;
+    return YES;
 }
 
 - (void)runCheck {
@@ -99,8 +100,8 @@ static        NSString *staticRequest = nil;
 
 - (BOOL)textFieldShouldReturn:(UITextField*)_textField {
   
+       
     [self runCheck];
-    
     [textField resignFirstResponder];
     return TRUE;
 
@@ -108,8 +109,18 @@ static        NSString *staticRequest = nil;
 
 - (IBAction) btnMoveTo:(id)sender;
 {
-    [self runCheck];
-    [textField resignFirstResponder];
+    if ([textField.text isEqualToString:@""]){
+        textField.layer.borderWidth = 2.0f;
+        textField.layer.borderColor = [[UIColor redColor] CGColor];
+        textField.layer.cornerRadius = 5;
+        textField.clipsToBounds      = YES;}
+    else{
+        textField.layer.borderWidth = 1.0f;
+        textField.layer.borderColor = [[UIColor whiteColor] CGColor];
+        textField.layer.cornerRadius = 5;
+        textField.clipsToBounds      = YES;
+        [self runCheck];
+        [textField resignFirstResponder];}
     
 }
 
@@ -126,6 +137,7 @@ static        NSString *staticRequest = nil;
         NSLog(@"Code already used");
         } else if (request.responseStatusCode == 200) {
         staticRequest = [request responseString];
+        //NSLog(@"code %@",staticRequest);
         DetailViewController *detailView = [[DetailViewController alloc] init];
         [self presentModalViewController:detailView animated:YES];
     }

@@ -17,7 +17,7 @@
 
 
 @implementation DetailViewController
-@synthesize webView, closeButton;
+@synthesize _webView, closeButton;
 
 
 - (void)viewDidLoad
@@ -26,13 +26,15 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.labelText = @"Loading Results...";
     self.title = @"Air21 Mobile";
-    [webView loadHTMLString:[SecondViewController response] baseURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/"]];
+    [_webView loadHTMLString:[SecondViewController response] baseURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/"]];
+    //[webView stringByEvaluatingJavaScriptFromString:@"function()"];
     
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];
+    //[_webView stringByEvaluatingJavaScriptFromString:@"popitup(url)"];
 
 }
 
