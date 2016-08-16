@@ -10,6 +10,11 @@
 
 #import "AboutViewController.h"
 
+@interface AboutViewController() 
+
+-(void) addImage:(UIButton*) image:(NSString*) path;
+@end
+
 @implementation AboutViewController
 @synthesize goBack, goURL;
 
@@ -36,7 +41,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self addImage: fbBtn :@"fb_icon"];
+    [self addImage: twitter :@"twitter_icon"];
+     
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void) addImage:(UIButton *)btn :(NSString *)path {
+    //NSString *bpath = [[[NSBundle mainBundle] bundleURL] path];
+    UIImage *img = [UIImage imageNamed: path];    
+    [btn setImage:img forState:UIControlStateNormal];
 }
 
 - (void)viewDidUnload
@@ -61,10 +75,20 @@
 
 - (IBAction) btnGoUrl:(id)sender;
 {
-    NSURL *url = [NSURL URLWithString: @"http://redmediacrm.com"];
+    NSURL *url = [NSURL URLWithString: @"http://air21.com.ph"];
     [[UIApplication sharedApplication] openURL: url];
     
 }
 
 
+- (IBAction)handleTwitter:(id)sender {
+    
+    NSURL *url = [NSURL URLWithString:@"http://twitter.com/#!/Air21ph"];
+    [[UIApplication sharedApplication] openURL: url];
+}
+
+- (IBAction)handleFb:(id)sender {
+    NSURL *url = [NSURL URLWithString:@"http://www.facebook.com/Air21ph"];
+    [[UIApplication sharedApplication] openURL: url];
+}
 @end

@@ -1,0 +1,114 @@
+[
+
+{ "package_id" : "1" , "per_kg": "0.1" ,  "scale_INTRA" : "60.00 ", "scale_1": "80.00" , "scale_2": "90.00" , "scale_3": "100.00", "scale_4": "100.00" },
+{ "package_id" : "1" , "per_kg": "0.5" ,  "scale_INTRA" : "70.00 ", "scale_1": "80.00" , "scale_2": "100.00" , "scale_3": "100.00", "scale_4": "100.00" },
+{ "package_id" : "1" , "per_kg": "1.0" ,  "scale_INTRA" : "80.00 ", "scale_1": "100.00" , "scale_2": "110.00" , "scale_3": "110.00", "scale_4": "110.00" },
+
+{ "package_id" : "2" , "per_kg": "0.1" ,  "scale_INTRA" : "60.00 ", "scale_1": "90.00" , "scale_2": "100.00" , "scale_3": "100.00", "scale_4": "100.00" },
+{ "package_id" : "2" , "per_kg": "0.5" ,  "scale_INTRA" : "70.00 ", "scale_1": "90.00" , "scale_2": "100.00" , "scale_3": "110.00", "scale_4": "110.00" },
+{ "package_id" : "2" , "per_kg": "1.0" ,  "scale_INTRA" : "90.00 ", "scale_1": "110.00" , "scale_2": "120.00" , "scale_3": "120.00", "scale_4": "120.00" },
+{ "package_id" : "2" , "per_kg": "1.5" ,  "scale_INTRA" : "100.00 ", "scale_1": "120.00" , "scale_2": "130.00" , "scale_3": "130.00", "scale_4": "140.00" },
+{ "package_id" : "2" , "per_kg": "2.0" ,  "scale_INTRA" : "110.00 ", "scale_1": "140.00" , "scale_2": "150.00" , "scale_3": "150.00", "scale_4": "160.00" },
+{ "package_id" : "2" , "per_kg": "2.5" ,  "scale_INTRA" : "130.00 ", "scale_1": "160.00" , "scale_2": "170.00" , "scale_3": "180.00", "scale_4": "180.00" },
+{ "package_id" : "2" , "per_kg": "3.0" ,  "scale_INTRA" : "150.00 ", "scale_1": "180.00" , "scale_2": "190.00" , "scale_3": "200.00", "scale_4": "210.00" },
+  
+
+{ "package_id" : "7" , "per_kg": "1.0" ,  "scale_INTRA" : "130.00 ", "scale_1": "140.00" , "scale_2": "150.00" , "scale_3": "160.00", "scale_4": "160.00" },
+{ "package_id" : "7" , "per_kg": "1.5" ,  "scale_INTRA" : "130.00 ", "scale_1": "150.00" , "scale_2": "160.00" , "scale_3": "180.00", "scale_4": "180.00" },
+{ "package_id" : "7" , "per_kg": "2.0" ,  "scale_INTRA" : "130.00 ", "scale_1": "170.00" , "scale_2": "180.00" , "scale_3": "200.00", "scale_4": "200.00" },
+{ "package_id" : "7" , "per_kg": "2.5" ,  "scale_INTRA" : "150.00 ", "scale_1": "190.00" , "scale_2": "200.00" , "scale_3": "220.00", "scale_4": "220.00" },
+{ "package_id" : "7" , "per_kg": "3.0" ,  "scale_INTRA" : "160.00 ", "scale_1": "200.00" , "scale_2": "210.00" , "scale_3": "230.00", "scale_4": "240.00" },
+{ "package_id" : "7" , "per_kg": "3.5" ,  "scale_INTRA" : "190.00 ", "scale_1": "210.00" , "scale_2": "230.00" , "scale_3": "260.00", "scale_4": "270.00" },
+{ "package_id" : "7" , "per_kg": "4.0" ,  "scale_INTRA" : "210.00 ", "scale_1": "230.00" , "scale_2": "240.00" , "scale_3": "290.00", "scale_4": "300.00" },
+
+
+{ "package_id" : "4" , "per_kg": "5.0" ,  "scale_INTRA" : "290.00 ", "scale_1": "320.00" , "scale_2": "320.00" , "scale_3": "320.00", "scale_4": "330.00" },
+{ "package_id" : "4" , "per_kg": "5.5" ,  "scale_INTRA" : "330.00 ", "scale_1": "360.00" , "scale_2": "360.00" , "scale_3": "380.00", "scale_4": "390.00" },
+{ "package_id" : "4" , "per_kg": "6.0" ,  "scale_INTRA" : "360.00 ", "scale_1": "400.00" , "scale_2": "400.00" , "scale_3": "420.00", "scale_4": "430.00" },
+{ "package_id" : "4" , "per_kg": "6.5" ,  "scale_INTRA" : "390.00 ", "scale_1": "440.00" , "scale_2": "450.00" , "scale_3": "460.00", "scale_4": "470.00" },
+{ "package_id" : "4" , "per_kg": "7.0" ,  "scale_INTRA" : "420.00 ", "scale_1": "480.00" , "scale_2": "490.00" , "scale_3": "500.00", "scale_4": "510.00" },
+{ "package_id" : "4" , "per_kg": "7.5" ,  "scale_INTRA" : "450.00 ", "scale_1": "520.00" , "scale_2": "530.00" , "scale_3": "530.00", "scale_4": "530.00" },
+{ "package_id" : "4" , "per_kg": "8.0" ,  "scale_INTRA" : "480.00 ", "scale_1": "530.00" , "scale_2": "540.00" , "scale_3": "540.00", "scale_4": "540.00" },
+{ "package_id" : "4" , "per_kg": "8.5" ,  "scale_INTRA" : "510.00 ", "scale_1": "530.00" , "scale_2": "540.00" , "scale_3": "540.00", "scale_4": "540.00" },
+{ "package_id" : "4" , "per_kg": "9.0" ,  "scale_INTRA" : "510.00 ", "scale_1": "530.00" , "scale_2": "540.00" , "scale_3": "540.00", "scale_4": "540.00" },
+
+{ "package_id" : "5" , "per_kg": "10.0" ,  "scale_INTRA" : "500.00 ", "scale_1": "520.00" , "scale_2": "530.00" , "scale_3": "550.00", "scale_4": "550.00" },
+{ "package_id" : "5" , "per_kg": "10.5" ,  "scale_INTRA" : "530.00 ", "scale_1": "600.00" , "scale_2": "600.00" , "scale_3": "620.00", "scale_4": "620.00" },
+{ "package_id" : "5" , "per_kg": "11.0" ,  "scale_INTRA" : "560.00 ", "scale_1": "650.00" , "scale_2": "650.00" , "scale_3": "690.00", "scale_4": "700.00" },
+{ "package_id" : "5" , "per_kg": "11.5" ,  "scale_INTRA" : "590.00 ", "scale_1": "700.00" , "scale_2": "700.00" , "scale_3": "760.00", "scale_4": "780.00" },
+{ "package_id" : "5" , "per_kg": "12.0" ,  "scale_INTRA" : "620.00 ", "scale_1": "750.00" , "scale_2": "760.00" , "scale_3": "820.00", "scale_4": "860.00" },
+{ "package_id" : "5" , "per_kg": "12.5" ,  "scale_INTRA" : "650.00 ", "scale_1": "800.00" , "scale_2": "820.00" , "scale_3": "880.00", "scale_4": "890.00" },
+{ "package_id" : "5" , "per_kg": "13.0" ,  "scale_INTRA" : "680.00 ", "scale_1": "820.00" , "scale_2": "820.00" , "scale_3": "880.00", "scale_4": "890.00" },
+{ "package_id" : "5" , "per_kg": "13.5" ,  "scale_INTRA" : "710.00 ", "scale_1": "820.00" , "scale_2": "820.00" , "scale_3": "880.00", "scale_4": "890.00" },
+{ "package_id" : "5" , "per_kg": "14.0" ,  "scale_INTRA" : "710.00 ", "scale_1": "820.00" , "scale_2": "820.00" , "scale_3": "880.00", "scale_4": "890.00" },
+{ "package_id" : "5" , "per_kg": "14.5" ,  "scale_INTRA" : "710.00 ", "scale_1": "820.00" , "scale_2": "820.00" , "scale_3": "880.00", "scale_4": "890.00" },
+{ "package_id" : "5" , "per_kg": "15.0" ,  "scale_INTRA" : "710.00 ", "scale_1": "820.00" , "scale_2": "820.00" , "scale_3": "890.00", "scale_4": "890.00" },
+
+{ "package_id" : "6" , "per_kg": "20.0" ,  "scale_INTRA" : "890.00 ", "scale_1": "890.00" , "scale_2": "890.00" , "scale_3": "1000.00", "scale_4": "1000.00" },
+{ "package_id" : "6" , "per_kg": "20.5" ,  "scale_INTRA" : "890.00 ", "scale_1": "890.00" , "scale_2": "890.00" , "scale_3": "1000.00", "scale_4": "1000.00" },
+{ "package_id" : "6" , "per_kg": "21.0" ,  "scale_INTRA" : "910.00 ", "scale_1": "910.00" , "scale_2": "910.00" , "scale_3": "1050.00", "scale_4": "1050.00" },
+{ "package_id" : "6" , "per_kg": "21.5" ,  "scale_INTRA" : "930.00 ", "scale_1": "930.00" , "scale_2": "930.00" , "scale_3": "1100.00", "scale_4": "1150.00" },
+{ "package_id" : "6" , "per_kg": "22.0" ,  "scale_INTRA" : "950.00 ", "scale_1": "950.00" , "scale_2": "950.00" , "scale_3": "1150.00", "scale_4": "1200.00" },
+{ "package_id" : "6" , "per_kg": "22.5" ,  "scale_INTRA" : "970.00 ", "scale_1": "970.00" , "scale_2": "1000.00" , "scale_3": "1200.00", "scale_4": "1300.00" },
+{ "package_id" : "6" , "per_kg": "23.0" ,  "scale_INTRA" : "990.00 ", "scale_1": "990.00" , "scale_2": "1050.00" , "scale_3": "1250.00", "scale_4": "1350.00" },
+{ "package_id" : "6" , "per_kg": "23.5" ,  "scale_INTRA" : "1000.00 ", "scale_1": "1050.00" , "scale_2": "1150.00" , "scale_3": "1300.00", "scale_4": "1400.00" },
+{ "package_id" : "6" , "per_kg": "24.0" ,  "scale_INTRA" : "1000.00 ", "scale_1": "1100.00" , "scale_2": "1250.00" , "scale_3": "1350.00", "scale_4": "1450.00" },
+{ "package_id" : "6" , "per_kg": "24.5" ,  "scale_INTRA" : "1000.00 ", "scale_1": "1150.00" , "scale_2": "1350.00" , "scale_3": "1450.00", "scale_4": "1500.00" },
+{ "package_id" : "6" , "per_kg": "25.0" ,  "scale_INTRA" : "1000.00 ", "scale_1": "1200.00" , "scale_2": "1350.00" , "scale_3": "1550.00", "scale_4": "1600.00" },
+
+
+
+
+{ "package_id" : "3" , "per_kg": "0.5" ,  "scale_INTRA" : "65.00 ", "scale_1": "85.00" , "scale_2": "90.00" , "scale_3": "90.00", "scale_4": "90.00" },
+{ "package_id" : "3" , "per_kg": "1.0" ,  "scale_INTRA" : "90.00 ", "scale_1": "95.00" , "scale_2": "95.00" , "scale_3": "95.00", "scale_4": "95.00" },
+{ "package_id" : "3" , "per_kg": "1.5" ,  "scale_INTRA" : "110.00 ", "scale_1": "120.00" , "scale_2": "120.00" , "scale_3": "150.00", "scale_4": "150.00" },
+{ "package_id" : "3" , "per_kg": "2.0" ,  "scale_INTRA" : "120.00 ", "scale_1": "130.00" , "scale_2": "140.00" , "scale_3": "160.00", "scale_4": "160.00" },
+{ "package_id" : "3" , "per_kg": "2.5" ,  "scale_INTRA" : "150.00 ", "scale_1": "180.00" , "scale_2": "180.00" , "scale_3": "200.00", "scale_4": "200.00" },
+{ "package_id" : "3" , "per_kg": "3.0" ,  "scale_INTRA" : "180.00 ", "scale_1": "185.00" , "scale_2": "185.00" , "scale_3": "220.00", "scale_4": "240.00" },
+{ "package_id" : "3" , "per_kg": "3.5" ,  "scale_INTRA" : "200.00 ", "scale_1": "235.00" , "scale_2": "235.00" , "scale_3": "245.00", "scale_4": "260.00" },
+{ "package_id" : "3" , "per_kg": "4.0" ,  "scale_INTRA" : "220.00 ", "scale_1": "235.00" , "scale_2": "235.00" , "scale_3": "280.00", "scale_4": "300.00" },
+{ "package_id" : "3" , "per_kg": "4.5" ,  "scale_INTRA" : "240.00 ", "scale_1": "260.00" , "scale_2": "260.00" , "scale_3": "300.00", "scale_4": "350.00" },
+{ "package_id" : "3" , "per_kg": "5.0" ,  "scale_INTRA" : "270.00 ", "scale_1": "300.00" , "scale_2": "300.00" , "scale_3": "350.00", "scale_4": "400.00" },
+{ "package_id" : "3" , "per_kg": "5.5" ,  "scale_INTRA" : "315.00 ", "scale_1": "350.00" , "scale_2": "350.00" , "scale_3": "350.00", "scale_4": "440.00" },
+{ "package_id" : "3" , "per_kg": "6.0" ,  "scale_INTRA" : "330.00 ", "scale_1": "375.00" , "scale_2": "375.00" , "scale_3": "380.00", "scale_4": "490.00" },
+{ "package_id" : "3" , "per_kg": "6.5" ,  "scale_INTRA" : "345.00 ", "scale_1": "400.00" , "scale_2": "400.00" , "scale_3": "410.00", "scale_4": "425.00" },
+{ "package_id" : "3" , "per_kg": "7.0" ,  "scale_INTRA" : "360.00 ", "scale_1": "420.00" , "scale_2": "420.00" , "scale_3": "440.00", "scale_4": "540.00" },
+{ "package_id" : "3" , "per_kg": "7.5" ,  "scale_INTRA" : "375.00 ", "scale_1": "450.00" , "scale_2": "450.00" , "scale_3": "470.00", "scale_4": "550.00" },
+{ "package_id" : "3" , "per_kg": "8.0" ,  "scale_INTRA" : "390.00 ", "scale_1": "460.00" , "scale_2": "460.00" , "scale_3": "500.00", "scale_4": "560.00" },
+
+{ "package_id" : "3" , "per_kg": "8.5" ,  "scale_INTRA" : "390.00 ", "scale_1": "470.00" , "scale_2": "470.00" , "scale_3": "520.00", "scale_4": "580.00" },
+{ "package_id" : "3" , "per_kg": "9.0" ,  "scale_INTRA" : "390.00 ", "scale_1": "480.00" , "scale_2": "480.00" , "scale_3": "540.00", "scale_4": "600.00" },
+{ "package_id" : "3" , "per_kg": "9.5" ,  "scale_INTRA" : "390.00 ", "scale_1": "490.00" , "scale_2": "490.00" , "scale_3": "560.00", "scale_4": "620.00" },
+{ "package_id" : "3" , "per_kg": "10.0" ,  "scale_INTRA" : "430.00 ", "scale_1": "500.00" , "scale_2": "500.00" , "scale_3": "560.00", "scale_4": "640.00" },
+{ "package_id" : "3" , "per_kg": "10.5" ,  "scale_INTRA" : "440.00 ", "scale_1": "570.00" , "scale_2": "570.00" , "scale_3": "580.00", "scale_4": "680.00" },
+{ "package_id" : "3" , "per_kg": "11.0" ,  "scale_INTRA" : "450.00 ", "scale_1": "600.00" , "scale_2": "600.00" , "scale_3": "600.00", "scale_4": "700.00" },
+{ "package_id" : "3" , "per_kg": "11.5" ,  "scale_INTRA" : "460.00 ", "scale_1": "620.00" , "scale_2": "620.00" , "scale_3": "620.00", "scale_4": "720.00" },
+{ "package_id" : "3" , "per_kg": "12.0" ,  "scale_INTRA" : "470.00 ", "scale_1": "640.00" , "scale_2": "640.00" , "scale_3": "640.00", "scale_4": "740.00" },
+{ "package_id" : "3" , "per_kg": "12.5" ,  "scale_INTRA" : "480.00 ", "scale_1": "670.00" , "scale_2": "670.00" , "scale_3": "670.00", "scale_4": "760.00" },
+{ "package_id" : "3" , "per_kg": "13.0" ,  "scale_INTRA" : "490.00 ", "scale_1": "690.00" , "scale_2": "690.00" , "scale_3": "700.00", "scale_4": "780.00" },
+
+
+{ "package_id" : "3" , "per_kg": "13.5" ,  "scale_INTRA" : "500.00 ", "scale_1": "710.00" , "scale_2": "710.00" , "scale_3": "730.00", "scale_4": "800.00" },
+{ "package_id" : "3" , "per_kg": "14.0" ,  "scale_INTRA" : "510.00 ", "scale_1": "735.00" , "scale_2": "735.00" , "scale_3": "760.00", "scale_4": "820.00" },
+{ "package_id" : "3" , "per_kg": "14.5" ,  "scale_INTRA" : "520.00 ", "scale_1": "760.00" , "scale_2": "760.00" , "scale_3": "790.00", "scale_4": "840.00" },
+{ "package_id" : "3" , "per_kg": "15.0" ,  "scale_INTRA" : "530.00 ", "scale_1": "780.00" , "scale_2": "780.00" , "scale_3": "820.00", "scale_4": "860.00" },
+{ "package_id" : "3" , "per_kg": "15.5" ,  "scale_INTRA" : "540.00 ", "scale_1": "800.00" , "scale_2": "800.00" , "scale_3": "850.00", "scale_4": "880.00" },
+{ "package_id" : "3" , "per_kg": "16.0" ,  "scale_INTRA" : "550.00 ", "scale_1": "825.00" , "scale_2": "825.00" , "scale_3": "880.00", "scale_4": "900.00" },
+{ "package_id" : "3" , "per_kg": "16.5" ,  "scale_INTRA" : "560.00 ", "scale_1": "850.00" , "scale_2": "850.00" , "scale_3": "900.00", "scale_4": "930.00" },
+{ "package_id" : "3" , "per_kg": "17.0" ,  "scale_INTRA" : "570.00 ", "scale_1": "870.00" , "scale_2": "870.00" , "scale_3": "920.00", "scale_4": "950.00" },
+{ "package_id" : "3" , "per_kg": "17.5" ,  "scale_INTRA" : "580.00 ", "scale_1": "890.00" , "scale_2": "890.00" , "scale_3": "940.00", "scale_4": "970.00" },
+{ "package_id" : "3" , "per_kg": "18.0" ,  "scale_INTRA" : "590.00 ", "scale_1": "915.00" , "scale_2": "915.00" , "scale_3": "960.00", "scale_4": "1100.00" },
+{ "package_id" : "3" , "per_kg": "18.5" ,  "scale_INTRA" : "600.00 ", "scale_1": "935.00" , "scale_2": "935.00" , "scale_3": "980.00", "scale_4": "1130.00" },
+{ "package_id" : "3" , "per_kg": "19.0" ,  "scale_INTRA" : "610.00 ", "scale_1": "960.00" , "scale_2": "960.00" , "scale_3": "980.00", "scale_4": "1140.00" },
+{ "package_id" : "3" , "per_kg": "19.5" ,  "scale_INTRA" : "620.00 ", "scale_1": "985.00" , "scale_2": "985.00" , "scale_3": "1000.00", "scale_4": "1170.00" },
+{ "package_id" : "3" , "per_kg": "20.0" ,  "scale_INTRA" : "630.00 ", "scale_1": "1000.00" , "scale_2": "1000.00" , "scale_3": "1000.00", "scale_4": "1200.00" },
+ 
+
+{ "package_id" : "3" , "per_kg": "20-70" ,  "scale_INTRA" : "21.00 ", "scale_1": "35.00" , "scale_2": "40.00" , "scale_3": "46.00", "scale_4": "55.00" },
+{ "package_id" : "3" , "per_kg": "71-99" ,  "scale_INTRA" : "20.00 ", "scale_1": "32.00" , "scale_2": "36.00" , "scale_3": "46.00", "scale_4": "55.00" },
+{ "package_id" : "3" , "per_kg": "100-299" ,  "scale_INTRA" : "17.00 ", "scale_1": "28.00" , "scale_2": "34.00" , "scale_3": "45.00", "scale_4": "54.00" },
+{ "package_id" : "3" , "per_kg": "300-499" ,  "scale_INTRA" : "14.00 ", "scale_1": "22.00" , "scale_2": "27.00" , "scale_3": "45.00", "scale_4": "53.00" },
+{ "package_id" : "3" , "per_kg": "500+" ,  "scale_INTRA" : "12.00 ", "scale_1": "20.00" , "scale_2": "25.00" , "scale_3": "42.00", "scale_4": "47.00" }
+
+
+]

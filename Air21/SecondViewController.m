@@ -21,8 +21,8 @@ static        NSString *staticRequest = nil;
 
 
 @implementation SecondViewController
-@synthesize code = ivCode, _textField = textField;
-
+@synthesize _textField = textField;
+//@synthesize code = ivCode;
 
 
 
@@ -86,6 +86,9 @@ static        NSString *staticRequest = nil;
 - (void)runCheck {
     
     NSString * b = [NSString stringWithFormat:@"http://www.af2100.com/tracking/mobile/index.jsp?awb=%@",textField.text];
+   // NSString * b = [NSString stringWithFormat:@"https://spreadsheets.google.com/feeds/list/0ArUkT24Ypo6odGYtTUU0YnNUdmk3a2YyWThnMTU4Ync/1/public/basic"];
+   //  NSString * b = [NSString stringWithFormat:@"https://spreadsheets.google.com/feeds/list/0ArUkT24Ypo6odGYtTUU0YnNUdmk3a2YyWThnMTU4Ync/1/public/basic"];
+  
     NSURL *url = [NSURL URLWithString:b];
     
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
@@ -98,22 +101,35 @@ static        NSString *staticRequest = nil;
     hud.labelText = @"Loading Results...";
 }
 
+//for the DONE key
 - (BOOL)textFieldShouldReturn:(UITextField*)_textField {
   
        
     [self runCheck];
+     NSLog(@"XXXXXXX");
     [textField resignFirstResponder];
     return TRUE;
 
 }
 
-- (IBAction) btnMoveTo:(id)sender;
+//to remove the keyboard
+-(IBAction)backgroundTouched:(id)sender {
+
+       [textField resignFirstResponder];
+        NSLog(@"here i am");
+    
+}
+
+
+//for the Track Key
+- (IBAction) btnTrack:(id)sender;
 {
     if ([textField.text isEqualToString:@""]){
         textField.layer.borderWidth = 2.0f;
         textField.layer.borderColor = [[UIColor redColor] CGColor];
         textField.layer.cornerRadius = 5;
-        textField.clipsToBounds      = YES;}
+        textField.clipsToBounds      = YES;
+        [textField resignFirstResponder];}
     else{
         textField.layer.borderWidth = 1.0f;
         textField.layer.borderColor = [[UIColor whiteColor] CGColor];
@@ -131,18 +147,34 @@ static        NSString *staticRequest = nil;
 
 - (void)requestFinished:(ASIHTTPRequest *)request
 {    
+    staticRequest = [request responseString];
+    NSLog(@"code %@",staticRequest);
     if (request.responseStatusCode == 400) {
-        NSLog(@"Invalid code"); 
-        } else if (request.responseStatusCode == 403) {
-        NSLog(@"Code already used");
+        
+        //NSLog(@"Invalid code"); 
+        } else if (request.responseStatusCode == 503) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        UIAlertView *alert = [[UIAlertView alloc] init];
+        [alert setTitle:@"Service Temporarily Unavailable. Please try again later."];
+        [alert setDelegate:self];
+        [alert addButtonWithTitle:@"Ok"];
+        [alert show];
+
         } else if (request.responseStatusCode == 200) {
         staticRequest = [request responseString];
-        //NSLog(@"code %@",staticRequest);
-        DetailViewController *detailView = [[DetailViewController alloc] init];
+      
+        DetailViewController *detailView = [[[DetailViewController alloc] init] autorelease];
         [self presentModalViewController:detailView animated:YES];
     }
     else {
-        NSLog(@"Unexpected error");
+        staticRequest = [request responseString];
+        NSLog(@"Unexpected error%@",staticRequest);
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        UIAlertView *alert = [[UIAlertView alloc] init];
+        [alert setTitle:@"Service Temporarily Unavailable. Please try again later."];
+        [alert setDelegate:self];
+        [alert addButtonWithTitle:@"Ok"];
+        [alert show];
     }
     
     [MBProgressHUD hideHUDForView:self.view animated:YES];

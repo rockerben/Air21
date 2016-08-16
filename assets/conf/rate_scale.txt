@@ -1,0 +1,32 @@
+[
+	{ "from": "NCR" , "to": "NCR" , "scale" : "INTRA" },
+	{ "from": "NCR" , "to": "A" , "scale" : "1" },
+	{ "from": "NCR" , "to": "B" , "scale" : "2" },
+	{ "from": "NCR" , "to": "C" , "scale" : "3" },
+	{ "from": "NCR" , "to": "D" , "scale" : "4" },
+
+	{ "from": "A" , "to": "NCR" , "scale" : "1" },
+	{ "from": "B" , "to": "NCR" , "scale" : "2" },
+	{ "from": "C" , "to": "NCR" , "scale" : "3" },
+	{ "from": "D" , "to": "NCR" , "scale" : "4" },
+	
+	{ "from": "A" , "to": "A" , "scale" : "1" },
+	{ "from": "A" , "to": "B" , "scale" : "2" },
+	{ "from": "A" , "to": "C" , "scale" : "3" },
+	{ "from": "A" , "to": "D" , "scale" : "4" },
+
+	{ "from": "B" , "to": "A" , "scale" : "2" },
+	{ "from": "B" , "to": "B" , "scale" : "2" },
+	{ "from": "B" , "to": "C" , "scale" : "3" },
+	{ "from": "B" , "to": "D" , "scale" : "4" },
+	 
+	{ "from": "C" , "to": "A" , "scale" : "3" },
+	{ "from": "C" , "to": "B" , "scale" : "3" },
+	{ "from": "C" , "to": "C" , "scale" : "2" },
+	{ "from": "C" , "to": "D" , "scale" : "3" },
+
+	{ "from": "D" , "to": "A" , "scale" : "4" },
+	{ "from": "D" , "to": "B" , "scale" : "4" },
+	{ "from": "D" , "to": "C" , "scale" : "3" },
+	{ "from": "D" , "to": "D" , "scale" : "2" }
+]

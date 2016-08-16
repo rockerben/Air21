@@ -27,15 +27,13 @@
     hud.labelText = @"Loading Results...";
     self.title = @"Air21 Mobile";
     [_webView loadHTMLString:[SecondViewController response] baseURL:[NSURL URLWithString:@"http://www.af2100.com/tracking/"]];
-    //[webView stringByEvaluatingJavaScriptFromString:@"function()"];
     
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     [MBProgressHUD hideHUDForView:self.view animated:YES];
-    //[_webView stringByEvaluatingJavaScriptFromString:@"popitup(url)"];
-
+    
 }
 
 - (IBAction) btnClose:(id)sender;

@@ -12,15 +12,16 @@
 
 
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController 
 {
     IBOutlet UITextField * textField;
-    NSString *IVCode;
+    //NSString *IVCode;
 }
 @property (nonatomic, retain) IBOutlet UITextField * _textField;
-@property (nonatomic, retain) NSString * code;
+//@property (nonatomic, retain) NSString * code;
 
-- (IBAction) btnMoveTo:(id)sender;
+- (IBAction) btnTrack:(id)sender;
+- (IBAction)backgroundTouched:(id)sender;
 + (NSString*)response;
 
 

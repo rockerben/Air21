@@ -13,6 +13,10 @@
 #import "SecondViewController.h"
 #import "DetailViewController.h"
 #import "AboutViewController.h"
+#import "LocTblViewController.h"
+//#import "RateViewController.h"
+
+#import "RateCalculatorViewController.h"
 
 
 
@@ -26,22 +30,69 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    UIWindow *window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
+    [window autorelease];
+    [self setWindow: window];
     
-    [self setWindow:[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]];
     
     // Override point for customization after application launch.
-    SecondViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
-    [viewController2 setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Track Shipment" image:[UIImage imageNamed:@"buttons_track.png"] tag:100]];
-
-    AboutViewController  *vc3 = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
-    [vc3 setTabBarItem:[[UITabBarItem alloc] initWithTitle:@"Info" image:[UIImage imageNamed:@"buttons-info2.png"] tag:102]];
+    SecondViewController *viewController2 = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil] ;
+   
     
-    UITabBarController *tabController = [[UITabBarController alloc] init];     
-    [tabController setViewControllers:[NSArray arrayWithObjects:viewController2, vc3, nil]];
+    UITabBarItem *trackItem =  [[UITabBarItem alloc]  initWithTitle:@"Track" image:[UIImage imageNamed:@"tracking@2x.png"] tag:100] ;
+    [trackItem autorelease];
+    [viewController2 setTabBarItem: trackItem  ];
+    [viewController2 autorelease];
+    
+    
+
+    AboutViewController  *vc3 = [[[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil] autorelease];
+    
+    
+    UITabBarItem *infoItem =  [[UITabBarItem alloc] initWithTitle:@"Info" image:[UIImage imageNamed:@"info@2x.png"] tag:102];
+    [infoItem autorelease];
+    [vc3 setTabBarItem: infoItem];
+   
+    
+    
+    LocTblViewController  *tblVc = [[LocTblViewController alloc] initWithNibName:@"LocTblViewController" bundle:nil];
+    [tblVc autorelease];
+    
+    UINavigationController *navVC1 = [[UINavigationController alloc] initWithRootViewController:tblVc];
+    [navVC1 autorelease];
+    navVC1.navigationBar.tintColor = [UIColor blackColor];
+    
+    UITabBarItem *locatorItem = [[UITabBarItem alloc] initWithTitle:@"Locator" image:[UIImage imageNamed:@"location@2x.png"] tag:103];
+    [locatorItem autorelease];
+
+    [tblVc setTabBarItem: locatorItem];
+    
+    
+    RateCalculatorViewController *rateVc =  [[RateCalculatorViewController alloc] initWithNibName:@"RateCalculatorView" bundle:nil];
+    [rateVc autorelease];
+    
+    
+    UITabBarItem *ratesItem = [[UITabBarItem alloc] initWithTitle:@"Rates" image:[UIImage imageNamed:@"calculator@2x.png"] tag:104];
+    [ratesItem autorelease];
+    [rateVc setTabBarItem: ratesItem];
+    
+    //RateViewController *rateVc = [[RateViewController  alloc] initWithNibName:@"RateViewController" bundle:nil];
+    
+    
+     
+    
+    UITabBarController *tabController = [[UITabBarController alloc] init]; 
+    [tabController autorelease];
+    [tabController setViewControllers:[NSArray arrayWithObjects: viewController2, rateVc, navVC1, vc3, nil]];
     
     
     self.window.rootViewController = tabController;
-    [self.window makeKeyAndVisible];
+   [self.window makeKeyAndVisible];
+    
+    
+    
+   
+    
     return YES;
 }
 
@@ -97,5 +148,11 @@
 {
 }
 */
+
+-(void) dealloc {
+    
+     
+    [super dealloc];
+}
 
 @end

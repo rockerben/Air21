@@ -1,0 +1,17 @@
+[
+    { "title": "Small Pouch" , "img":"assets/ico/sulight_small.png",  "value":"1" , "l":"14" , "w": "1", "h": "7.5"    },
+    
+    { "title": "Large Pouch" , "img":"assets/ico/sulight_large.png",  "value":"2" , "l":"19" , "w": "1", "h": "12" },
+    
+	{ "title": "Box" , "img":"assets/ico/hebigat_5kg.png", "value":"7" , "l":"33.5" , "w": "26", "h": "10"  },
+    
+
+    { "title": "5kg Box" , "img":"assets/ico/hebigat_5kg.png", "value":"4" , "l":"33.5" , "w": "26", "h": "20" },
+    
+    { "title": "10kg Box" , "img":"assets/ico/hebigat_10kg.png", "value":"5" , "l":"40.5" , "w": "33", "h": "26" },
+    
+    { "title": "20kg Box" , "img":"assets/ico/hebigat_20kg.png", "value":"6" , "l":"29.5" , "w": "41.5", "h": "34"},
+   
+
+	{ "title": "Own Package" ,  "img":"assets/ico/bigahe.png", "value":"3" , "l":"0" , "w": "0", "h": "0" }
+]

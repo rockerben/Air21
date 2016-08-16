@@ -12,8 +12,13 @@
 @interface AboutViewController : UIViewController
 {
     IBOutlet UIButton * goBack;
-    IBOutlet UIButton * goURL;    
+    IBOutlet UIButton * goURL;
+    
+    IBOutlet UIButton *fbBtn;
+    IBOutlet UIButton *twitter;
 }
+- (IBAction)handleTwitter:(id)sender;
+- (IBAction)handleFb:(id)sender;
 @property (nonatomic, retain) IBOutlet UIButton *goBack;
 @property (nonatomic, retain) IBOutlet UIButton *goURL;
 
